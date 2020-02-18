@@ -10,12 +10,12 @@
 </head>
 
 <body>
-	 
-		<section class="green-bar"><!-- bg color, also is this right? --> <!-- how do i apply the dark green color -->
+	 <header>
+		<div class="green-bar">
 			<div class="wrapper">
 				<div class="row">
-					<div class="logo"> <!-- would this need to be an id in order to float?  -->
-						<p>Brandi</p>
+					<div>
+						<p class="logo">Brandi</p>
 					</div>
 					<div id="tagline">
 						<p>I'm you're tagline</p> <!-- add border side? -->
@@ -31,12 +31,17 @@
 					</nav>
 				</div>
 			</div>
-		</section>	
+		</div>	
 			
-		<header class="bg-green">
-			<h1> Meet Brandi /creative one page template </h1>
-			<p>We are a team of professionals</p>
-		</header>
+		<div id="bg-green">
+			<div class="wrapper">
+				<p>Meet <b>Brandi</b>!</p> <!-- halp meh plz -->
+				<p><span>&#x2F;creative</span> one page template </p>
+				<p><span></span>We are a team of professionals<span></span></p>
+			</div>
+		</div>
+		 
+	</header>
 
 	<!--------------------------  features/gray bg  -------------------------------->
 	
@@ -70,27 +75,28 @@
 	
 	<!--------------------------  works/white bg  -------------------------------->
 	
-	<section id="works">
-		<div class="wrapper">
+	<div id="btm-line">
+		<section class="wrapper" id="works">
 			<header>
 				<h2>Works</h2>
 			</header>
-			<p>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore</p>
-		</div>
-	</section>
-	
-	<footer id="contact">
-		<div class="wrapper">
-			<div class="row">
-				<div class="logo">
-					<p>Brandi</p>
-				</div>
-				<div>
-					<p>eusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
-				</div>
+			<div> <!-- give this a width -->
+				<p>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore</p>
 			</div>
-		</div>
-	</footer>
+		</section>
+	</div>
+	
+	<!--------------------------  contact  -------------------------------->
+	
+	<div id="contact">
+		<footer class="wrapper"> 
+			<div>
+				<p><span class="logo">Brandi</span></p><br>
+				<p>eusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+			</div>
+		</footer>
+	</div>
+	
 </body>
 </html>
 

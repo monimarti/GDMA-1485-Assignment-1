@@ -50,36 +50,20 @@
 	box-sizing: border-box;
 }
 
+
 /*--------------------------------------------------------------
 4.0 - Elements 
 -------------------------------------------------------------- */
 
 /* -- FORMS -- */
 
-footer {
-	background-color: #0eb493;
-}
 
 /* -- LISTS -- */
 
 nav li {
 	display: inline-block;
 	margin-right: 30px;
-	color: white;
-	
 }
-
-nav {
-    float: right;
-}
-
-nav li a {
-	color: #fff;
-	text-decoration: none;
-	font-size: 15px;
-	
-}
-
 
 /* -- MEDIA -- */
 
@@ -87,19 +71,33 @@ nav li a {
 
 /* -- TYPOGRAPHY -- */
 
-nav li a, #tagline {
+* {
 	font-family: 'Open Sans', sans-serif;
 }
 
 h2 {
 	color: green;
 	margin: 0 auto;
-	text-align: center;
-	font-family: 'Open Sans', sans-serif;
+	display: inline-block;
+	width: 200px;
 	font-weight: 800; 
-	padding-bottom: 20px;
+	padding-bottom: 40px;
+	border-bottom: solid thin #dce1e5;
+}
+	
+.col-1-3, #contact {
+	font-size: 13px;
+	line-height: 18px;
+}
 
-	/*padding: 20px 0;  do i give this padding or the bg? */
+#works p {
+	font-size: 18px;
+	line-height: 25px;
+}
+	
+	
+footer {
+	padding: 100px 0 150px 0;
 }
 
 /*--------------------------------------------------------------
@@ -108,7 +106,7 @@ h2 {
 
 /* -- FRAMEWORK -- */
 
-.wrapper{
+.wrapper {
 	width: 1170px;
 	margin: 0 auto;
 }
@@ -119,55 +117,100 @@ h2 {
 
 /* -- CLASSES -- */
 
-.bg-green {
-	padding: 400px 50px 180px 400px;
+.col-1-3 {
+	width: 300px;
+	float: left;
+	text-align: left;
+	color: #717982;
 }
+
+.col-1-3:last-child, nav {
+	float: right;
+	margin-right: 0;
+}
+
+.col-1-3:nth-child(2) {
+	margin-left: 125px;
+}
+
+
 
 /*--------------------------------------------------------------
 6.0 - Components 
 -------------------------------------------------------------- */
 
+#bg-green {
+	padding: 400px 0 170px 0;
+}
 
+nav li a {
+	text-decoration: none;
+	font-size: 15px;	
+}
+
+#contact {
+	background-color: #0eb493;	
+}
+
+#contact div {
+	width: 250px;
+}
 
 #features {
 	background-color: #f4f7f9;
-	padding: 70px;
+	padding: 100px;
+	text-align: center;
 }
 
 #features > h2 {
 	margin: 0 auto;
+
 }
 
-#works {
+#works  {
 	background-color: #fff;
+	padding: 100px;
+	text-align: center;	
 }
 
-.bg-green {
-	background-color: #104f41;
+#works div {
+	width: 700px;
+	margin: 0 auto;
+	text-align: center;
 }
 
-.bg-green div div div p {
-	width: 100px;
-	float: left;
+#works p {
+	color: #5b646e;
+	padding-top: 40px;
+	font-size: 18px;
 }
 
+#contact, #bg-green div p, nav li a {
+	color: #fff;	
+}
 
+#btm-line {
+	border-bottom: solid 5px #062033;
+}
 
 /* -- BUTTONS -- */
 
 /* -- HEADER -- */
 
+h3 {
+	color: #062033;
+	font-weight: 500;
+	padding-top: 40px;
+}
+
 .logo {
 	color: #fff;
 	font-family: 'Pacifico', cursive;
 	float: left;
-	font-size: 18px;
+	font-size: 20px;
+	width: 50px;
 }
 
-.logo div {
-	float: right;
-	width: 100px;
-}
 
 .green-bar {
 	background-color: #10443f;
@@ -178,11 +221,39 @@ h2 {
 	float: left;
 	margin-left: 20px;
 	border-left: medium solid #104f41;
-	color: #000;
-	display: inline-block;
+	color: #6a807e; 
 	padding-left: 20px;
 	font-size: 12px;
 	padding-top: 10px;
+}
+
+#bg-green {
+	background-color: #104f41;
+}
+
+#bg-green p:first-child {
+	font-size: 60px;
+	margin-bottom: -50px;
+}
+
+#bg-green p:nth-child(2), #bg-green span {
+	font-size: 48px;
+}
+
+#bg-green div  {
+	text-align: center;	
+}
+
+#bg-green span {
+	color: #0eb493;
+}
+
+#bg-green p:last-child span {
+	background-color: #0eb493;
+	display: inline-block;
+	width: 30px;
+	height: 1px;
+	margin: 0 40px ;
 }
 
 /* -- NAVIGATION -- */
@@ -190,6 +261,7 @@ h2 {
 nav li a:hover, h2 {
 	color: #0eb493;
 }
+
 
 
 
